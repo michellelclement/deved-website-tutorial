@@ -35,11 +35,11 @@ function animateSlides() {
       })
       .addTo(controller);
     //New Animation
-    const pageTL = gsap.timeline();
+    const pageTl = gsap.timeline();
     let nextSlide = slides.length - 1 === index ? "end" : slides[index + 1];
-    pageTL.fromTo(nextSlide, { y: "0%" }, { y: "50%" });
-    pageTL.fromTo(slide, { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.5 });
-    pageTL.fromTo(nextSlide, { y: "50%" }, { y: "0%" }, "-=0.5");
+    pageTl.fromTo(nextSlide, { y: "0%" }, { y: "50%" });
+    pageTl.fromTo(slide, { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.5 });
+    pageTl.fromTo(nextSlide, { y: "50%" }, { y: "0%" }, "-=0.5");
     //Create new scene
     pageScene = new ScrollMagic.Scene({
       triggerElement: slide,
@@ -53,7 +53,7 @@ function animateSlides() {
         indent: 200
       })
       .setPin(slide, { pushFollowers: false }) //Pins section as scroll
-      .setTween(pageTL)
+      .setTween(pageTl)
       .addTo(controller);
   });
 }
