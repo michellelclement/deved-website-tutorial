@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #17181a;
+  font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+  color: white;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-header {
+  min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+}
+.nav-header__line1, .nav-header__line2 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  pointer-events: none;
+}
+.nav-header__burger {
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background: #17181a;
+}
+.hero__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-basis: 25rem;
+  padding-left: 5rem;
+  position: relative;
+}
+.hero__desc h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 5rem;
+}
+.hero__desc p {
+  padding: 3rem 0rem;
+  font-size: 1.5rem;
+  color: rgb(221, 221, 221);
+}
+.hero__btn {
+  padding: 1rem 2rem;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 1rem;
+  text-decoration: none;
+  align-self: flex-start;
+  cursor: pointer;
+}
+.hero__img {
+  position: relative;
+  flex: 1;
+  flex-basis: 25rem;
+}
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero__span--fashion {
+  color: rgb(255, 139, 93);
+}
+.hero__span--forest {
+  color: rgb(86, 124, 228);
+}
+.hero__span--hike {
+  color: rgb(167, 110, 231);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  opacity: 1;
+  -webkit-clip-path: circle(50px at 100% -10%);
+          clip-path: circle(50px at 100% -10%);
+  -webkit-clipclip-path: circle(50px at 100% -10%);
+}
+.nav__links {
+  font-size: 3rem;
+  flex-basis: 30rem;
+}
+.nav__links h3 {
+  padding: 3rem 0rem;
+}
+.nav__contact {
+  flex-basis: 30rem;
+}
+.nav__contact h2 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+.nav__contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.reveal-img,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #17181a;
+  left: 0;
+  top: 0;
+}
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */
