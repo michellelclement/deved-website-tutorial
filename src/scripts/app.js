@@ -49,7 +49,7 @@ function animateSlides() {
         name: "page",
         indent: 200
       })
-      .setPin(slide) //Pins section as scroll
+      .setPin(slide, { pushFollowers: false }) //Pins section as scroll
       .setTween(pageTL)
       .addTo(controller);
   });
