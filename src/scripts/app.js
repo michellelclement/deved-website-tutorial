@@ -25,6 +25,7 @@ function animateSlides() {
       triggerElement: slide,
       triggerHook: 0.25,
     })
+      .setTween(slideTl)
       .addIndicators({
         colorStart: "white",
         colorTrigger: "white",
