@@ -226,3 +226,7 @@ body {
   background: white;
   transform: scale(2);
 }
+
+body.hide{
+  overflow: hidden;
+}

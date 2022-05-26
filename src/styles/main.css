@@ -203,4 +203,8 @@ body {
 .cursor.explore-active {
   background: white;
   transform: scale(2);
+}
+
+body.hide {
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
