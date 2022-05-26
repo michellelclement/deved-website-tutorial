@@ -149,4 +149,8 @@ body {
   border: 2px solid white;
   border-radius: 50%;
   position: absolute;
+}
+
+.scrollmagic-pin-spaces {
+  position: static !important;
 }/*# sourceMappingURL=main.css.map */
