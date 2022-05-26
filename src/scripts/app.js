@@ -24,6 +24,7 @@ function animateSlides() {
     slideScene = new ScrollMagic.Scene({
       triggerElement: slide,
       triggerHook: 0.25,
+      reverse: false, //stops the animation starting again
     })
       .setTween(slideTl)
       .addIndicators({
