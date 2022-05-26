@@ -15,7 +15,7 @@ function animateSlides(){
         //GSAP
         const slideTl = gsap.timeline({defaults: {duration: 1, ease: 'power2.inOut'}});
         slideTl.fromTo(revealImg, { x:'0%'}, { x:'100%'})
-        slideTl.fromTo(img, {scale: 2}, {scale: 1});
+        slideTl.fromTo(img, {scale: 2}, {scale: 1}, '-=1'); // -= animates 1 second sooner
     });
 }
 
