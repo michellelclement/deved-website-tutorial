@@ -108,6 +108,7 @@ body {
   left: 0;
   position: absolute;
   mix-blend-mode: darken;
+  transform: translateY(100%);
 }
 
 .t-swipe1 {
