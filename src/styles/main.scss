@@ -11,6 +11,12 @@ body {
   background: $background;
   font-family: $mainFont;
   overflow-x: hidden;
+  position: relative;
+}
+
+
+main {
+  position: absolute;
 }
 
 #logo {
