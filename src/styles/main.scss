@@ -230,3 +230,16 @@ body {
 body.hide{
   overflow: hidden;
 }
+
+
+/* Other pages */
+
+.fashion {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  color: white;
+}
