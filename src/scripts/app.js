@@ -122,7 +122,12 @@ barba.init({
       namespace: "fashion",
       beforeEnter() {
         detailAnimation();
-        gsap.fromTo('.nav-header', 1, { y: '100%'}, { y: '0%', ease: 'power2.inOut'});
+        gsap.fromTo('.nav-header', 1, { y: '100%'}, { y: '0%', ease: 'power2.inOut'}
+        );
+      },
+      beforeLeave() {
+        controller.destroy();
+        detailScene.destroy();
       }
     }
   ],
